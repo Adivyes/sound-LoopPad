@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mainDiv">
+    <h1>Sound Loop Pad</h1>
+
+    <div class="keys">
+
+        <div class="key" id="funkId" onclick="padOnClick('futureFunk', this.id)">
+            <i class="bi-vinyl-fill"></i><span class="sound"><i class="far fa-stop-circle"
+                    style="font-size: 30px"></i></span>
+        </div>
+
+        <div class="key" id="stutterId" onclick="padOnClick('stutterBreakbeats',this.id)">
+            <i class="fas fa-music" style="width: 160px; height: 85px; padding-top: 15px"></i><span class="sound"><i
+                    class="far fa-stop-circle" style="font-size: 30px"></i></span>
+        </div>
+
+        <div class="key" id='bassId' onclick="padOnClick('BassWarwick',this.id)">
+            <i class="fas fa-guitar" style="width: 160px; height: 85px; padding-top: 15px"></i></i><span class="sound"><i class="far fa-stop-circle"
+                    style="font-size:30px"></i></span>
+        </div>
+        <div class="key" id='guiterId' onclick="padOnClick('electricGuitar',this.id)">
+            <i class="bi bi-boombox"></i><span class="sound"><i
+                    class="far fa-stop-circle" style="font-size:30px"></i></span>
+        </div>
+        <div class="key" id='stompyId' onclick="padOnClick('StompySlosh',this.id)">
+            <i class="bi bi-music-note-list"></i><span class="sound"><i class="far fa-stop-circle"
+                    style="font-size:30px"></i></span>
+        </div>
+        <div class="key" id='groovId' onclick="padOnClick('GrooveB',this.id)">
+            <i class="fas fa-drum" style="width: 160px; height: 85px; padding-top: 15px"></i><span class="sound"><i
+                    class="far fa-stop-circle" style="font-size:30px"></i></span>
+        </div>
+        <div class="key" id='politicId' onclick="padOnClick('MazePolitics',this.id)">
+            <i class="fas fa-drum-steelpan" style="width: 160px; height: 85px; padding-top: 15px"></i><span
+                class="sound"><i class="far fa-stop-circle" style="font-size:30px"></i></span>
+        </div>
+        <div class="key" id='pas3Id' onclick="padOnClick('PAS3GROOVE1',this.id)">
+            <i class="fas fa-sliders-h" style="width: 160px; height: 85px; padding-top: 15px"></i><span class="sound"><i
+                    class="far fa-stop-circle" style="font-size:30px"></i></span>
+        </div>
+        <div class="key" id='starId' onclick="padOnClick('SilentStar',this.id)">
+            <i class="fas fa-compact-disc" style="width: 160px; height: 85px; padding-top: 15px"></i><span
+                class="sound"><i class="far fa-stop-circle" style="font-size:30px"></i></span>
+        </div>
+    </div>
+
+    <div id="audioDiv">
+        <audio class="sound" src="music loop/120_future_funk_beats_25.mp3" id="futureFunk"></audio>
+        <audio class="sound" src="music loop/120_stutter_breakbeats_16.mp3" id="stutterBreakbeats"></audio>
+        <audio class="sound" src="music loop/Bass Warwick heavy funk groove on E 120 BPM.mp3" id="BassWarwick"></audio>
+        <audio class="sound" src="music loop/electric guitar coutry slide 120bpm - B.mp3" id="electricGuitar"></audio>
+        <audio class="sound" src="music loop/FUD_120_StompySlosh.mp3" id="StompySlosh"></audio>
+        <audio class="sound" src="music loop/GrooveB_120bpm_Tanggu.mp3" id="GrooveB"></audio>
+        <audio class="sound" src="music loop/MazePolitics_120_Perc.mp3" id="MazePolitics"></audio>
+        <audio class="sound" src="music loop/PAS3GROOVE1.03B.mp3" id="PAS3GROOVE1"></audio>
+        <audio class="sound" src="music loop/SilentStar_120_Em_OrganSynth.mp3" id="SilentStar"></audio>
+    </div>
+    
+    <div id="btnsDiv">
+        <button class="btn" id="playAllSoundsBtn" onclick="playAllSounds()">play All</button>
+        
+        <button class="btn" id="stopAllSoundsBtn" onclick="stopAllSounds()">stop All</button>
+    </div>
+    
+</div>
+        <div id="imgDiv">
+            <img src = "happy.svg" alt="My Happy SVG"/>
+        </div>
+    <script src="myScripts.js"></script>
+</body>
+
+</html>
