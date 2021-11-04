@@ -14,7 +14,7 @@ body {
   transform: translate(-50%, -50%)
 }
 #imgDiv{
- padding-top: 15%;
+ padding-top: 10%;
  padding-right: 20%;
 }
 .keys { 
@@ -35,18 +35,7 @@ body {
     background: rgb(240,249,255);
     background: radial-gradient(ellipse at center, rgb(149, 149, 149) 0%,rgb(44, 44, 44) 100%);
 }
-/* .playing {
-    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
-    background: rgb(240,249,255);
-    background: radial-gradient(ellipse at center, rgba(240,249,255,1) 0%,rgba(0,180,227,1) 100%);
-} */
 
-/* .sound{
-display:flex ;
-flex-direction: column;
-margin-top: 1px;
-
-} */
 .btn{
   color: black;
   font-size: larger;
