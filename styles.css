@@ -44,7 +44,6 @@ body {
 i {
 
   display: block;
-  /* padding-top: 30px; */
   font-size: 60px;
   color: transparent;
   text-shadow: 1px 1px 2px #fff;
@@ -62,9 +61,9 @@ i {
   #imgDiv{
     padding-top: 180%;
     padding-right: 10%;
+    width: 100px;
   }
   .keys { 
-    /* margin:0 auto; */
     width: 600px; 
     overflow: hidden;
     cursor: pointer;
